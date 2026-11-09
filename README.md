@@ -86,7 +86,7 @@ id_2 of the module on CN3 (bus id 8), 12.5 cm arm and a 161 g payload:
 python -m bam.mangdang.all_record --id 8 --mass 0.16078 --arm-mass 0.01872 --length 0.145 \
     --arm-length 0.125 --payload-offset 0.02 --payload-inertia 7.68e-05 \
     --kps 40,80,120,160 --kd 400 --shuffle --logdir raw \
-    --trajectories lift_and_drop,sin_sin,sin_time_square,up_and_down,gait_hip \
+    --trajectories lift_and_drop,sin_sin,sin_time_square,up_and_down \
     --extra "--zero-dd 1556 --control-mode 1 --pwm-scale 0.001 --max-pwm-duty-cycle 0.99 \
              --ki-position 0 --supply-v 12"
 ```
