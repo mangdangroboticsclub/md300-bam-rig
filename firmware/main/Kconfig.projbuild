@@ -1,0 +1,17 @@
+# BAM bridge configuration options
+menu "BAM Bridge"
+
+    config BAM_UART_BAUD
+        int "Bridge UART baud rate"
+        default 921600
+        range 1200 3000000
+        help
+            Baud rate of the binary bridge protocol on UART0 (CH340K USB-UART,
+            pins 43/44). The firmware always prints a boot banner at 115200
+            first, then switches to this baud. Monitor the bridge with:
+
+                idf.py monitor --monitor-baud <this value>
+
+            and open the host driver (tools/bam_bridge.py) at the same baud.
+
+endmenu

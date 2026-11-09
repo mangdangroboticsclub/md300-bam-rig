@@ -1,0 +1,16 @@
+# Target and flash size for the MangDang MP4 ESP32 CORE (ESP32-S3-WROOM-1-N16R8)
+CONFIG_IDF_TARGET="esp32s3"
+CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y
+CONFIG_ESPTOOLPY_FLASHSIZE="16MB"
+
+# No console subsystem: UART0 is the raw binary bridge channel (CH340K, 43/44)
+CONFIG_ESP_CONSOLE_NONE=y
+
+# Single app partition (no OTA)
+CONFIG_PARTITION_TABLE_SINGLE_APP=y
+
+# Tight loop firmware: optimize for speed
+CONFIG_COMPILER_OPTIMIZATION_PERF=y
+
+# Bridge UART baud (menuconfig: BAM Bridge > BAM_UART_BAUD)
+CONFIG_BAM_UART_BAUD=921600
