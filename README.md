@@ -43,12 +43,11 @@ of the anchor you build.
 
 1. Print the anchor for the output under test: `side_anchor/` for id_1,
    `coaxial_anchor/` for id_2 and id_3. Print the arm length you need and the
-   payload bed. TODO(user): print settings and the role of the geared and
-   smooth motor holder pieces.
+   payload bed.
 2. Fit the module in the anchor and clamp the anchor to the bench, so the
    module cannot move.
-3. Fix the pendulum arm to the output under test with the horn and its
-   screws.
+3. Fix the pendulum arm to the output under test (screws in `BOM.md`; on
+   id_2, M2 nuts as spacers keep the arm clear of the housing).
 4. Bolt the payload to the payload bed with M8 bolts and nuts, and fix the bed
    to the arm's end: the payload's centre sits 2 cm beyond the arm's end.
    Weigh the arm and the payload; the recorder takes both masses and the
