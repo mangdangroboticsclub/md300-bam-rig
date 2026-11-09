@@ -92,7 +92,14 @@ python -m bam.mangdang.all_record --id 8 --mass 0.16078 --arm-mass 0.01872 --len
 ```
 
 `--zero-dd` is the raw position reading (deci-degrees) of the arm hanging
-straight down; read it with `python3 firmware/tools/bam_bridge.py ping --servo 8`.
+straight down. Measure it with the payload mounted, before each recording:
+
+```
+python -m bam.mangdang.zero --id 8 --logdir data_raw
+```
+
+It lifts the arm to each side, releases it and prints the midpoint of the rest
+positions, which cancels static friction.
 
 ## Licence
 
