@@ -16,6 +16,8 @@ under `bam/mangdang/`. The recorded logs are in the release
 
 ![Rig parts: C-clamp, pendulum arms, payload, anchors and fasteners](images/bam_rig.jpg)
 
+<img src="images/bam_rig_assembled.jpg" alt="Assembled rig: module in the anchor, clamped to the bench, pendulum arm with payload" width="400">
+
 ## Contents
 
 ```
@@ -31,7 +33,7 @@ hardware/
     V2_Motor_Holder_Bottom.STL
   pendulum/         arms of 10, 12.5 and 15 cm, payload bed
     10cm_arm.STL  12_5cm_arm.STL  15cm_arm.STL  payload_bed.stl
-images/bam_rig.jpg
+images/           photos of the parts and the assembled rig
 firmware/           ESP32-S3 USB-serial to SPI bridge (ESP-IDF)
 BOM.md              bill of materials
 ```
