@@ -1,5 +1,5 @@
 /* bam_bridge.c  -  minimal BAM identification firmware for the AT32F413
- * servo driver boards (SCS0009-class servos).
+ * servo driver boards.
  *
  * The ESP32 acts as a serial<->SPI bridge with a small binary protocol that
  * maps 1:1 onto the operations the BAM actuator pipeline needs:

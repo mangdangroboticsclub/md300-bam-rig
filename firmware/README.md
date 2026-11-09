@@ -71,7 +71,7 @@ response  14 B: 62 cmd servo status pos_dd:u16 cur_mA:i16 val:f32 crc:u16
 | 11 | `GET_STATUS` | | board status word |
 
 - `status`: 0 OK, 1 bad servo id, 2 bad argument, 3 board or SPI failure,
-  5 unknown command.
+  5 unknown command. A frame with a bad CRC gets no reply.
 - `pos_dd`: raw AT32 deci-degrees, 0 to `scale_dd` (default 3100 =
   `range_position_deg` x 10), centre `scale_dd / 2`. `cur_mA`: signed motor
   current. Every reply carries feedback from the same SPI transaction.

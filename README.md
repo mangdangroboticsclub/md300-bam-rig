@@ -36,8 +36,8 @@ firmware/           ESP32-S3 USB-serial to SPI bridge (ESP-IDF)
 BOM.md              bill of materials
 ```
 
-The two `V2_back_portion_holder.STL` files differ: print the one in the folder
-of the anchor you build.
+Both anchors use the same back portion holder (`V2_back_portion_holder.STL`,
+copied in each folder).
 
 ## Printing and assembly
 
@@ -94,7 +94,7 @@ python -m bam.mangdang.all_record --id 8 --mass 0.16078 --arm-mass 0.01872 --len
 straight down. Measure it with the payload mounted, before each recording:
 
 ```
-python -m bam.mangdang.zero --id 8 --logdir data_raw
+python -m bam.mangdang.zero --id 8 --logdir raw
 ```
 
 It lifts the arm to each side, releases it and prints the midpoint of the rest
