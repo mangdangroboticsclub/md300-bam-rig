@@ -15,7 +15,7 @@
  *   read_present_current    -> cur_mA field of EVERY response (signed mA)
  *   read_pwm_duty           -> CMD_GET_LIVE DB_LIVE_PWM_DUTY
  *   set/get any parameter   -> CMD_SET_PARAM (pad byte = id) / CMD_GET_PARAM
- *                              (ki_position=10, control_mode=11 need AT32 fw >= 0.0.8)
+ *                              (ki_position=10, control_mode=11, pwm_scale=12)
  *   read temperature        -> val of PING/SET_POS/IDLE/TORQUE replies carries the
  *                              feedback "res" word (u32 bits): NTC temp in 0.1 degC
  *   read board status word  -> CMD_GET_STATUS

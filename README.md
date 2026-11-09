@@ -5,8 +5,7 @@ Actuator Models) models of MangDang's MD-300-150 module. The module is clamped
 in a printed anchor, a printed pendulum arm with a bolt payload is fixed to the
 output under test, and an ESP32-S3 bridge connects the module's AT32 driver
 board to the host over USB. The module has three outputs: id_1 (side output),
-id_2 (outer coaxial output) and id_3 (inner coaxial output, through a rod),
-with AT32 firmware 0.0.9.
+id_2 (outer coaxial output) and id_3 (inner coaxial output, through a rod).
 
 The models (`mangdang_md300_id_1`, `_id_2`, `_id_3`), the recorder and the
 recording workflow are in BAM, branch

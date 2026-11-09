@@ -56,9 +56,9 @@ PARAM = {
     "range_position_deg": 3, "reverse_motor": 4, "kp_position": 5,
     "kd_position": 6, "kp_current": 7, "kff_current": 8,
     "max_pwm_duty_cycle": 9,
-    "ki_position": 10,   # AT32 fw >= 0.0.7
-    "control_mode": 11,  # AT32 fw >= 0.0.8: 0 legacy current loop, 1 PID->PWM
-    "pwm_scale": 12,     # AT32 fw 0.0.9
+    "ki_position": 10,
+    "control_mode": 11,  # 0 current loop, 1 PID->PWM
+    "pwm_scale": 12,
 }
 PARAM_BY_ID = {v: k for k, v in PARAM.items()}
 

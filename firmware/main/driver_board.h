@@ -52,9 +52,9 @@ enum {
     DB_PARAM_KP_CURRENT,            /* 7 */
     DB_PARAM_KFF_CURRENT,           /* 8 */
     DB_PARAM_MAX_PWM_DUTY_CYCLE,    /* 9 */
-    DB_PARAM_KI_POSITION,           /* 10  AT32 fw >= 0.0.7: position integral gain (0 = off)   */
-    DB_PARAM_CONTROL_MODE,          /* 11  AT32 fw >= 0.0.8: 0 legacy current loop, 1 PID->PWM  */
-    DB_PARAM_PWM_SCALE,             /* 12  AT32 fw 0.0.9 */
+    DB_PARAM_KI_POSITION,           /* 10  position integral gain (0 = off)                     */
+    DB_PARAM_CONTROL_MODE,          /* 11  0 current loop, 1 PID->PWM                          */
+    DB_PARAM_PWM_SCALE,             /* 12  PWM scale of the PID output */
     DB_PARAM_COUNT
 };
 
@@ -72,7 +72,7 @@ enum {
     DB_LIVE_PWM_DUTY,           /* PWM duty cycle 0..1          */
     DB_LIVE_MODE,               /* 0 idle 1 position 2 torque   */
     DB_LIVE_LOOP_COUNTER,       /* control loop tick counter    */
-    DB_LIVE_TEMPERATURE_C,      /* 12 motor NTC temperature, degC (fw >= 0.0.6 NTC build) */
+    DB_LIVE_TEMPERATURE_C,      /* 12 motor NTC temperature, degC  */
     DB_LIVE_COUNT
 };
 

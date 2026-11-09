@@ -29,7 +29,7 @@
 
 ## Other parts
 
-- An MD-300-150 module (AT32 firmware 0.0.9) and an ESP32-S3 board running the
+- An MD-300-150 module and an ESP32-S3 board running the
   bridge in `firmware/` (the Mini Pupper v4 board works), with its cable to the
   module and a USB cable to the host.
 - A 12 V bench supply and a bench clamp.
