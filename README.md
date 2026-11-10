@@ -1,9 +1,9 @@
 # MD-300-150 BAM identification rig
 
 A test rig for identifying [BAM](https://github.com/Rhoban/bam) (Better
-Actuator Models) models of MangDang's MD-300-150 module. The module is clamped
+Actuator Models) models of MangDang's MD-300-150 actuator module. The module is clamped
 in a printed anchor, a printed pendulum arm with a bolt payload is fixed to the
-output under test, and an ESP32-S3 bridge connects the module's AT32 driver
+output under test, and an ESP32-S3 bridge connects the module's driver
 board to the host over USB. The module has three outputs: id_1 (side output),
 id_2 (outer coaxial output) and id_3 (inner coaxial output, through a rod).
 
@@ -14,8 +14,6 @@ under `bam/mangdang/`. The recorded logs are in the release
 [`md300-data-v1`](https://github.com/mangdangroboticsclub/bam/releases/tag/md300-data-v1).
 
 ![Rig parts: C-clamp, pendulum arms, payload, anchors and fasteners](images/bam_rig.jpg)
-
-<img src="images/bam_rig_assembled.jpg" alt="Assembled rig: module in the anchor, clamped to the bench, pendulum arm with payload" width="400">
 
 ## Contents
 
@@ -58,7 +56,7 @@ See [BOM.md](BOM.md) for the parts.
 
 ## Bridge firmware
 
-`firmware/` builds with ESP-IDF v6.0 for MangDang's MP4 ESP32 CORE board
+`firmware/` builds with ESP-IDF v6.0 for MangDang's Mini Ppupper 4 ESP32 board
 (ESP32-S3). With Docker, from `firmware/`:
 
 ```bash
